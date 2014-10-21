@@ -1,5 +1,5 @@
 var container = $("#container")
-
+var pickedValue = 35
 
 function createGrid(v){
   
@@ -36,7 +36,12 @@ function hoverOver(){
 
 $('#reset').click(function(){
    $("#container").empty();
-  createGrid(pickedValue);
+
+  if (pickedValue == ""){
+    alert("pickedvalueisnull")
+    createGrid(35);
+  } else {
+  createGrid(pickedValue);}
 });
 
 $('#submit').click(function(){
@@ -44,7 +49,8 @@ $('#submit').click(function(){
   $("#container").empty();
   pickedValue = document.getElementById('size').value
   createGrid(pickedValue);
+  return pickedValue;
 });
 
-createGrid(35);
+createGrid(pickedValue);
 
