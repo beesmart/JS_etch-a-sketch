@@ -3,6 +3,8 @@ JS_etch-a-sketch
 
 A JavaScript "etch-a-sketch" app - Task outline from Odin Project.com.
 
+Try it here: http://beesmart.github.io/JS_etch-a-sketch.
+
 > Changelog 
   ---------
 
